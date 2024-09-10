@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Html and CSS</header>
+    <nav>
+      <div class="logo">Easylearn</div>
+      <ul class="nav-links">
+        <a href="#"><li>Something1</li></a>
+      </ul>
+    </nav>
+    <div class="information-container">
+      <section>What is HTML and CSS?</section>
+      <article>
+        <div>
+          <section><h1>HTML</h1></section>
+          <br />
+          <article>
+            <p>
+              ‘HTML’ stands for. HTML stands for HyperText Markup Language.
+              HyperText is effectively a text within a text, and a markup
+              language is a language understood by computers, designed to
+              essentially describe webpages and make the text you use more
+              interactive.
+              <br />
+              <br />
+              It was originally invented back in 1989 as the publishing language
+              of the web, and to put it very simply, it is the first building
+              block in creating a webpage. When you first come across the world
+              of HTML, you’ll likely encounter a whole ream of terms and phrases
+              that are somewhat baffling too. The three main ones are elements,
+              tags, and attributes.
+              <br />
+              <br />
+              HTML5 is the latest ‘version’ of HTML, and knowledge in this area
+              is a growing trend in the job market. By and large, it has the
+              same functionality as standard HTML but is much more dynamic and
+              uses much less code to build something fantastic.
+            </p>
+          </article>
+        </div>
+        <div>
+          <section><h1>CSS</h1></section>
+          <br />
+          <article>
+            <p>
+              CSS is the acronym for Cascade Styling Sheets. In short, it is a
+              sheet style language, which is a type of language you can use to
+              describe the presentation of a markup language – in this case, to
+              describe the movements of HTML. It effectively determines how the
+              building blocks, as laid by HTML, are decorated and presented to
+              the user.
+              <br /><br />CSS was first created around 1996 to make sense of
+              HTML and make the webpage look and feel amazing. Just as with any
+              language, you have to write CSS, and knowing how we write CSS is a
+              skill that any webpage developer needs to have. Easy to maintain,
+              CSS is the second part of the two-part tool kit for webpage
+              creation. <br /><br />Web accessibility is really important to
+              many employers and companies nowadays, and there is fierce
+              competition in creating the most accessible and well-designed
+              webpage. Learning some software development fundamentals involving
+              CSS can help you learn how to create accessible web pages.
+            </p>
+          </article>
+
+      </article>
+      <aside class="info-img">
+        <div class="imagebox">
+          <img src="./assets/CSS rendering.svg" alt="" class="cover" />
+        </div>
+        <p>Fig: HTML CSS working under the hood.</p>
+      </aside>
+    </div>
+    <!-- terminilogies screen -->
+    <div class="screen">
+      <h1>CSS Terminologies</h1>
+      <div class="terminologies-info">
+        <div>
+          <section><h2>Rule Declaration</h2></section>
+          <br />
+          <article>
+            <p>
+              A CSS rule declaration, also known as a CSS rule-set, is a
+              fundamental component in writing CSS. It is used to style HTML
+              elements on web pages. A rule declaration consists of a selector
+              and a declaration block containing one or more declarations
+              separated by semicolons.
+            </p>
+          </article>
+        </div>
+        <div class="inner-desc">
+          <div class="selector-desc">
+            <section><h1>Selector</h1></section>
+            <br />
+            <article>
+              <p>
+                This part of a CSS rule-set determines which HTML elements the
+                style rules will apply to. Selectors can target elements based
+                on their name, id, class, attributes, relationship with other
+                elements, and more. For example, p targets all elements, .class
+                targets all elements with class="class", and #id targets the
+                element with id="id".
+              </p>
+            </article>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+selector {
+  property1: value1;
+  property2: value2;
+}
+            </code></pre>
+          </div>
+          <!-- row 2 -->
+
+          <div class="declaration-block-desc">
+            <section><h1>Declaration Block</h1></section>
+            <br />
+            <article>
+              <p>
+                The declaration block contains one or more declarations that
+                apply styles to the elements selected by the selector. This
+                block is enclosed in curly braces {}.
+              </p>
+            </article>
+          </div>
+
+          <!--row 3  -->
+          <div class="final-desc">
+            <section><h1>Declaration</h1></section>
+            <br />
+            <article>
+              <ul>
+                <li>
+                  <p>
+                    A declaration inside a declaration block consists of a
+                    property and a value, separated by a colon (:). Each
+                    declaration provides specific styling instructions to the
+                    selected elements.
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <h3>Property:</h3>
+                  <p>
+                    A property is a type of attribute that defines which aspect
+                    of the element's styling will be changed, such as color,
+                    font-size, border, etc.
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <h3>Value:</h3>
+                  <p>
+                    The value specifies what value the property will have, such
+                    as red, 12px, solid 1px black, etc.
+                  </p>
+                </li>
+                <br />
+                <li>
+                  <p>
+                    Declarations in a block are separated by semicolons (;).
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+h1 {
+  color: blue;
+  font-size: 14px;
+}
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- Css design screen -->
+
+    <div class="screen">
+      <h1>CSS Styling</h1>
+      <div class="terminologies-info">
+        <h2>Cascade and inheritance</h2>
+        <div class="inner-desc">
+          <div class="cascade-desc">
+            <br />
+            <section><h3>Cascade</h3></section>
+            <br />
+            <article>
+              <p>
+                Stylesheets cascade — at a very simple level, this means that
+                the origin, the cascade layer, and the order of CSS rules
+                matter. When two rules from the same cascade layer apply and
+                both have equal specificity, the one that is defined last in the
+                stylesheet is the one that will be used.
+              </p>
+            </article>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.cascade-desc > article{
+  color: orangered;
+}
+
+.cascade-desc > article{
+  color: black;
+}
+/* here the color black is overwriting color 
+orangered due to cascade property*/         
+            </code></pre>
+          </div>
+
+          <!--row 2 -->
+          <div class="inheritance-desc">
+            <section><h3>Inheritance</h3></section>
+            <br />
+
+            <article>
+              <p>
+                Inheritance also needs to be understood in this context — some
+                CSS property values set on parent elements are inherited by
+                their child elements, and some aren't.
+                <br />
+                <br />
+                For example, if you set a color and font-family on an element,
+                every element inside it will also be styled with that color and
+                font, unless you've applied different color and font values
+                directly to <span>them</span>.
+              </p>
+            </article>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.inheritance-desc > article{
+  color: orangered;
+}
+              
+.inheritance-desc span{
+color: black;
+}
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- box model -->
+    <div class="box-screen">
+      <h1>CSS Styling</h1>
+      <div class="terminologies-info">
+        <h2>Box Model</h2>
+        <p>
+          The CSS box model as a whole applies to block boxes and defines how
+          the different parts of a box — margin, border, padding, and content —
+          work together to create a box that you can see on a page. Inline boxes
+          use just some of the behavior defined in the box model.
+        </p>
+        <div class="inner-desc">
+          <div class="standard-desc">
+            <br />
+            <section><h2>Standardbox model</h2></section>
+            <br />
+            <article>
+              <p>
+                In the standard box model, if you set inline-size and block-size
+                (or width and height) property values on a box, these values
+                define the inline-size and block-size (width and height in
+                horizontal languages) of the content box. Any padding and
+                borders are then added to those dimensions to get the total size
+                taken up by the box
+                <br />
+                The actual space taken up by the box will be 410px wide (350 +
+                25 + 25 + 5 + 5) and 210px high (150 + 25 + 25 + 5 + 5).
+              </p>
+            </article>
+            <img src="./assets/Box Model.png" alt="" />
+          </div>
+
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.box {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+            </code></pre>
+          </div>
+
+          <!--row 2 -->
+          <div class="alternate-desc">
+            <section><h3>AlternateBox Model</h3></section>
+            <br />
+
+            <article>
+              <p>
+                In the alternative box model, any width is the width of the
+                visible box on the page. The content area width is that width
+                minus the width for the padding and border (see image below). No
+                need to add up the border and padding to get the real size of
+                the box
+              </p>
+            </article>
+            <img src="./assets/altBox Model.png" alt="" />
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.box {
+  box-sizing: border-box;
+}
+
+/*this sould be specefied for 
+creating alternate box model */  
+         
+.box {
+  width: 350px;
+  inline-size: 350px;
+  height: 150px;
+  block-size: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- background and borders -->
+
+    <div class="screen">
+      <h1>CSS Styling</h1>
+      <div class="terminologies-info">
+        <h2>Background and Borders</h2>
+        <div class="inner-desc">
+          <div class="bg-desc">
+            <br />
+            <section><h2>Background Color</h2></section>
+            <br />
+            <article>
+              <p>
+                The background-color property defines the background color on
+                any element in CSS. The property accepts any valid. A
+                background-color extends underneath the content and padding box
+                of the element.
+              </p>
+            </article>
+            <br />
+            <h3>Code Output</h3>
+            <div class="bg-box"></div>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.bg-box
+{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  /*background-image: url(star.png);*/
+  /*background img can be set 
+  with "background-imag" property*/
+}             
+            </code></pre>
+          </div>
+
+          <!--row 2 -->
+          <div class="border-desc">
+            <section><h2>Borders</h2></section>
+            <br />
+
+            <article>
+              <p>
+                When learning about the Box Model, we discovered how borders
+                affect the size of our box. In this lesson, we will look at how
+                to use borders creatively. Typically when we add borders to an
+                element with CSS we use a shorthand property that sets the
+                color, width, and style of the border in one line of CSS.
+              </p>
+            </article>
+            <br />
+            <h3>Code Output</h3>
+            <div class="bg-border"></div>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.bg-border
+{
+  min-height: 100px;
+  max-width: 100px;
+  border:1px solid black
+}
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- hanling text -->
+    <div class="screen">
+      <h1>CSS Styling</h1>
+      <div class="terminologies-info">
+        <h2>Handling Different text directions</h2>
+        <div class="inner-desc">
+          <div class="writingmodes-desc">
+            <br />
+            <section><h2>Writing Modes</h2></section>
+            <br />
+            <article>
+              <p>
+                A writing mode in CSS refers to whether the text is running
+                horizontally or vertically. The writing-mode property lets us
+                switch from one writing mode to another. You don't need to be
+                working in a language which uses a vertical writing mode to want
+                to do this — you could also change the writing mode of parts of
+                your layout for creative purposes.
+              </p>
+            </article>
+            <br />
+            <h3>Code Output</h3>
+            <h5 class="vertical-text">vertical</h5>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.vertical-text{
+border: 1px solid black;
+padding: 10px;
+writing-mode: vertical-rl;
+}        
+            </code></pre>
+          </div>
+
+          <!--row 2 -->
+          <div class="logical-desc">
+            <section><h2>Logical properties and values</h2></section>
+            <br />
+
+            <article>
+              <p>
+                The property mapped to width when in a horizontal writing mode
+                is called inline-size — it refers to the size in the inline
+                dimension. The property for height is named block-size and is
+                the size in the block dimension. You can see how this works in
+                the example below where we have replaced width with inline-size.
+              </p>
+            </article>
+            <br />
+            <h3>Code Output</h3>
+            <div class="wrapper">
+              <div class="box horizontal">
+                <h2>Heading</h2>
+                <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+                <p>These boxes have inline-size.</p>
+              </div>
+              <div class="box vertical">
+                <h2>Heading</h2>
+                <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+                <p>These boxes have inline-size.</p>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.box {
+  inline-size: 150px;
+}
+
+.horizontal {
+  writing-mode: horizontal-tb;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+}
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- overflow -->
+    <div class="screen">
+      <h1>CSS Styling</h1>
+      <div class="terminologies-info">
+        <h2>Overflow</h2>
+        <p>
+          Everything in CSS is a box. You can constrain the size of these boxes
+          by assigning values of width and height (or inline-size and
+          block-size). Overflow happens when there is too much content to fit in
+          a box. CSS provides various tools to manage overflow. As you go
+          further with CSS layout and writing CSS, you will encounter more
+          overflow situations.
+
+          <br />
+          CSS tries to avoid data loss so the information exceeds the allocated
+          space.
+        </p>
+        <div class="inner-desc">
+          <div class="overflow-desc">
+            <br />
+            <section><h2>Overflow property</h2></section>
+            <br />
+            <article>
+              <p>
+                The overflow property helps you manage an element's content
+                overflow. Using this property, you can convey to a browser how
+                it should handle overflow content. The default value of the
+                overflow value type is visible. With this default setting, one
+                can see content when it overflows.
+              </p>
+            </article>
+            <br />
+            <h3>Code output</h3>
+            <div class="overflowbox">
+              This box has a height and a width. This means that if there is too
+              much content to be displayed within the assigned height, there
+              will be an overflow situation. If overflow is set to hidden then
+              any overflow will not be visible.
+            </div>
+            <br />
+            <p>This content is outside of the box.</p>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.overflowbox {
+  border: 1px solid #333333;
+  width: 350px;
+  height: 70px;
+  overflow: hidden;
+}       
+            </code></pre>
+          </div>
+
+          <!--row 2 -->
+          <div class="overflowscroll-desc">
+            <section><h2>Overflow Scroll Property</h2></section>
+            <br />
+
+            <article>
+              <p>
+                Instead, perhaps you would like to add scrollbars when content
+                overflows? Using overflow: scroll, browsers with visible
+                scrollbars will always display them—even if there is not enough
+                content to overflow. This offers the advantage of keeping the
+                layout consistent, instead of scrollbars appearing or
+                disappearing, depending upon the amount of content in the
+                container.
+              </p>
+            </article>
+            <br />
+            <h3>Code output</h3>
+            <div class="overflowbox scroll">
+              This box has a height and a width. This means that if there is too
+              much content to be displayed within the assigned height, there
+              will be an overflow situation. If overflow is set to hidden then
+              any overflow will not be visible.
+            </div>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+.overflowbox {
+  border: 1px solid #333333;
+  width: 350px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.scroll{
+  overflow: scroll;
+}
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="screen">
+      <h1>CSS Terminologies</h1>
+      <div class="terminologies-info">
+        <h2>Form</h2>
+        <p>
+          An HTML form is used to collect user input. The user input is most
+          often sent to a server for processing.
+        </p>
+        <div class="inner-desc">
+          <div class="form-desc">
+            <br />
+            <section><h3>Form Element</h3></section>
+            <br />
+            <article>
+              <p>
+                Form elements can be a tricky issue when it comes to styling
+                with CSS. The Web Forms module contains detailed guides to the
+                trickier aspects of styling these, which I will not fully
+                reproduce here. There are, however, a few key basics worth
+                highlighting in this section
+              </p>
+            </article>
+            <br />
+            <h3>Code Output</h3>
+            <br />
+            <div class="form-box">
+              <form>
+                <div>
+                  <label for="name">Name</label> <input type="text" id="name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" />
+                </div>
+                <div>
+                  <label for="Password">Password</label>
+                  <input type="password" id="password" />
+                </div>
+
+                <div class="buttons">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    onclick="event.preventDefault();"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">.form-box{
+  border: 1px solid;
+  padding: 2%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+ {
+  border: 2px solid #000;
+  margin: 0 0 1em 0;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  border: 3px solid #333;
+  background-color: #999;
+  border-radius: 5px;
+  padding: 10px 2em;
+  font-weight: bold;
+  color: #fff;
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #333;           
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- table -->
+
+    <div class="screen">
+      <h1>CSS Styling</h1>
+      <div class="terminologies-info">
+        <h2>Table</h2>
+
+        <div class="inner-desc">
+          <div class="standard-desc">
+            <br />
+            <section><h3>Table styling</h3></section>
+            <br />
+            <article>
+              <p>
+                Styling an HTML table isn't the most glamorous job in the world,
+                but sometimes we all have to do it.
+              </p>
+            </article>
+            <br />
+            <h3>Code Output:</h3>
+            <table>
+              <caption>
+                A summary of the UK's most famous punk bands
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Band</th>
+                  <th scope="col">Year formed</th>
+                  <th scope="col">No. of Albums</th>
+                  <th scope="col">Most famous song</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Buzzcocks</th>
+                  <td>1976</td>
+                  <td>9</td>
+                  <td>Ever fallen in love (with someone you shouldn't've)</td>
+                </tr>
+                <tr>
+                  <th scope="row">The Clash</th>
+                  <td>1976</td>
+                  <td>6</td>
+                  <td>London Calling</td>
+                </tr>
+
+                <!-- several other great bands -->
+
+                <tr>
+                  <th scope="row">The Stranglers</th>
+                  <td>1974</td>
+                  <td>17</td>
+                  <td>No More Heroes</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row" colspan="2">Total albums</th>
+                  <td colspan="2">77</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div class="code-container">
+            <button class="copy-btn">Copy Code</button>
+            <pre><code class="language-css">
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #000;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+tfoot th {
+  font-weight: bold;
+}
+              
+            </code></pre>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  </body>
+</html>
