@@ -319,26 +319,22 @@ tfoot th {
 
 
 /* media */
-/* Base styles for small screens */
-/* Base styles for small screens (mobile-first approach) */
-/* Base styles for small screens (mobile-first approach) */
-/* Base styles for small screens (mobile-first approach) */
+
 @media (max-width: 767px) {
   body {
-
       margin: 0;
       padding: 0;
   }
 
   header {
       font-size: 1.8rem;
-      margin-bottom: 20px; /* Space below the header */
+      margin-bottom: 20px;
   }
 
   nav {
       font-size: 1.2em;
       text-align: center;
-      margin-bottom: 20px; /* Space below the nav */
+      margin-bottom: 20px;
   }
 
   .nav-links {
@@ -354,22 +350,22 @@ tfoot th {
 
   .imagebox {
       width: 100%;
-      margin-bottom: 20px; /* Space below the image box */
+      margin-bottom: 20px;
   }
 
   .information-container {
       display: block;
-      margin-bottom: 20px; /* Space below the information container */
+      margin-bottom: 20px;
   }
 
   .information-container > section,
   .information-container > article,
   .information-container > aside {
       width: 100%;
-      margin-bottom: 20px; /* Space below each section */
+      margin-bottom: 20px;
   }
 
-  .screen{
+  .screen {
     height: min-content;
   }
 
@@ -377,55 +373,55 @@ tfoot th {
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
-      margin-bottom: 20px; /* Space below the code container */
+      margin-bottom: 20px;
   }
 
   .inner-desc {
       display: block;
-      margin-bottom: 20px; /* Space below inner descriptions */
+      margin-bottom: 20px;
   }
 
   .bg-box,
   .bg-border {
       width: 100%;
       height: auto;
-      margin-bottom: 20px; /* Space below the background boxes */
+      margin-bottom: 20px;
   }
 
   .wrapper {
       display: block;
-      margin-bottom: 20px; /* Space below the wrapper */
+      margin-bottom: 20px;
   }
 
   .box {
       width: 100%;
-      margin-bottom: 20px; /* Space below each box */
+      margin-bottom: 20px;
   }
 
   .vertical-text {
       writing-mode: horizontal-tb;
-      margin-bottom: 20px; /* Space below vertical text */
+      margin-bottom: 20px;
   }
 
   .overflowbox {
       width: 100%;
-      margin-bottom: 20px; /* Space below the overflow box */
+      margin-bottom: 20px;
   }
 
   .scroll {
       max-height: 150px;
-      margin-bottom: 20px; /* Space below scroll areas */
+      margin-bottom: 20px;
   }
 
   .form-box {
       width: 100%;
-      margin-bottom: 20px; /* Space below the form box */
+      margin-bottom: 20px;
   }
 
   table {
       font-size: 0.9rem;
       width: 100%;
-      margin-bottom: 20px; /* Space below tables */
+      margin-bottom: 20px;
   }
 
   th, td {
@@ -433,17 +429,15 @@ tfoot th {
   }
 }
 
-/* Medium screens (tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
-
   header {
       font-size: 2rem;
-      margin-bottom: 30px; /* Space below the header */
+      margin-bottom: 30px;
   }
 
   nav {
       font-size: 1.4em;
-      margin-bottom: 30px; /* Space below the nav */
+      margin-bottom: 30px;
   }
 
   .nav-links {
@@ -457,22 +451,22 @@ tfoot th {
 
   .imagebox {
       width: 100%;
-      margin-bottom: 30px; /* Space below the image box */
+      margin-bottom: 30px;
   }
 
   .information-container {
       display: block;
-      margin-bottom: 30px; /* Space below the information container */
+      margin-bottom: 30px;
   }
 
   .information-container > section,
   .information-container > article,
   .information-container > aside {
       width: 100%;
-      margin-bottom: 30px; /* Space below each section */
+      margin-bottom: 30px;
   }
 
-  .screen{
+  .screen {
     height: min-content;
   }
 
@@ -480,54 +474,54 @@ tfoot th {
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
-      margin-bottom: 30px; /* Space below the code container */
+      margin-bottom: 30px;
   }
 
   .inner-desc {
       display: block;
-      margin-bottom: 30px; /* Space below inner descriptions */
+      margin-bottom: 30px;
   }
 
   .bg-box,
   .bg-border {
       width: 100%;
       height: auto;
-      margin-bottom: 30px; /* Space below the background boxes */
+      margin-bottom: 30px;
   }
 
   .wrapper {
       display: block;
-      margin-bottom: 30px; /* Space below the wrapper */
+      margin-bottom: 30px;
   }
 
   .box {
       width: 100%;
-      margin-bottom: 30px; /* Space below each box */
+      margin-bottom: 30px;
   }
 
   .vertical-text {
       writing-mode: horizontal-tb;
-      margin-bottom: 30px; /* Space below vertical text */
+      margin-bottom: 30px;
   }
 
   .overflowbox {
       width: 100%;
-      margin-bottom: 30px; /* Space below the overflow box */
+      margin-bottom: 30px;
   }
 
   .scroll {
       max-height: 200px;
-      margin-bottom: 30px; /* Space below scroll areas */
+      margin-bottom: 30px;
   }
 
   .form-box {
       width: 100%;
-      margin-bottom: 30px; /* Space below the form box */
+      margin-bottom: 30px;
   }
 
   table {
       font-size: 1rem;
       width: 100%;
-      margin-bottom: 30px; /* Space below tables */
+      margin-bottom: 30px;
   }
 }
